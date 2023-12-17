@@ -1,0 +1,176 @@
+body {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  /* background-color: #283149; */
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+h2 {
+  color: white;
+}
+
+#myvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* min-width: 100%;
+  min-height: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+
+  box-shadow: 0 0 5px 0;
+  /* background: inherit; */
+  backdrop-filter: blur(0px);
+
+  /* color: white; */
+  /* text-align: center; */
+  /* background-color: #fff; */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  /* margin: 10% auto; */
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.modal-body {
+  box-shadow: 0 0 5px 0;
+  /* background: inherit; */
+  backdrop-filter: blur(20px);
+  z-index: 2;
+}
+
+.dr {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  /* line-height: 2; */
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  margin: 10px;
+  /* background-color: white; */
+}
+
+.cart {
+  color: black;
+}
+
+#timer {
+  display: flex;
+  width: 25em;
+  border: 2px solid black;
+  padding: 0.5em;
+  background-color: white;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  align-items: center;
+}
+
+#timer svg {
+  font-size: 34px;
+}
+
+#timer ul {
+  display: flex;
+  font-size: 34px;
+}
+
+#timer-start {
+  font-size: 20px;
+  padding: 3px;
+  border: none;
+  border-radius: 6px;
+  background-color: #04AA6D;
+  color: white;
+  display: block;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+}
+
+#timer-reset {
+  font-size: 20px;
+  padding: 3px;
+  border: none;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  display: block;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+}
+
+#timer-start:hover {
+  background-color: #3e8e41;
+}
+
+#container-for-timer {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin-top: 30px;
+}

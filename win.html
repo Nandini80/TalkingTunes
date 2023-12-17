@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    /* background: #0C5AF0; */
+    padding: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+
+}
+
+
+.modal {
+
+    background: #FFF;
+    max-width: 530px;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 60px 0;
+    overflow: hidden;
+
+}
+
+
+
+.trophy {
+    display: block;
+    margin: 0 auto 40px;
+}
+
+h1 {
+    display: block;
+    margin: 0 0 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 40px;
+    padding: 0 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+button {
+    outline: 0;
+    background: linear-gradient(#5388C5, #2A78DD);
+    width: 35%;
+    border: 0;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(42, 120, 221, 0.3);
+    margin: 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:last-child {
+    background: linear-gradient(#54CE42, #1FCD37);
+    box-shadow: 0 5px 10px rgba(31, 205, 55, 0.3);
+}
+
+footer {
+    background: #FFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+    margin: 0 -60px;
+    padding: 30px 0;
+    text-align: center;
+}
+#myvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.container
+{
+      box-shadow: 0 0 5px 0;
+  /* background: inherit; */
+  backdrop-filter: blur(0px);
+
+}
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myvideo">
+        <source src="vid1.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+<div class="modal"><img class="trophy"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/Screenshot_2015-10-11_21.43.12.png" />
+    <h1>Congratulations</h1>
+    <p>You have successfully completed the game</p>
+    <footer>
+        <button onclick="redirectToStartPage()">Next</button>
+    </footer>
+</div>
+    </div>
+
+  
+<script>
+    function redirectToStartPage() {
+        window.location.href = 'index.html';
+    }
+</script>
+</body>
+
+</html>
